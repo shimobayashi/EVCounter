@@ -23,6 +23,7 @@
 		43D0C16816EB3AFF0055750E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0C14316EB3AFD0055750E /* Foundation.framework */; };
 		43D0C17016EB3AFF0055750E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43D0C16E16EB3AFF0055750E /* InfoPlist.strings */; };
 		43D0C17316EB3AFF0055750E /* EVCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D0C17216EB3AFF0055750E /* EVCounterTests.m */; };
+		43D0C17E16EB51C40055750E /* EVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D0C17D16EB51C40055750E /* EVRow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		43D0C16F16EB3AFF0055750E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43D0C17116EB3AFF0055750E /* EVCounterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVCounterTests.h; sourceTree = "<group>"; };
 		43D0C17216EB3AFF0055750E /* EVCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVCounterTests.m; sourceTree = "<group>"; };
+		43D0C17C16EB51C40055750E /* EVRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRow.h; sourceTree = "<group>"; };
+		43D0C17D16EB51C40055750E /* EVRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				43D0C15C16EB3AFD0055750E /* ViewController.h */,
 				43D0C15D16EB3AFD0055750E /* ViewController.m */,
 				43D0C14816EB3AFD0055750E /* Supporting Files */,
+				43D0C17C16EB51C40055750E /* EVRow.h */,
+				43D0C17D16EB51C40055750E /* EVRow.m */,
 			);
 			path = EVCounter;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				43D0C14E16EB3AFD0055750E /* main.m in Sources */,
 				43D0C15216EB3AFD0055750E /* AppDelegate.m in Sources */,
 				43D0C15E16EB3AFD0055750E /* ViewController.m in Sources */,
+				43D0C17E16EB51C40055750E /* EVRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
