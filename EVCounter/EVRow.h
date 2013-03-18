@@ -10,4 +10,7 @@
 
 @interface EVRow : UIView<UITextFieldDelegate>
 
+- (int)ev;
+- (void)setEv: (int)value;
+
 @end

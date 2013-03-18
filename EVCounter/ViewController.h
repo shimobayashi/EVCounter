@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EVRow.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet EVRow *hRow;
+@property (weak, nonatomic) IBOutlet EVRow *aRow;
+@property (weak, nonatomic) IBOutlet EVRow *bRow;
+@property (weak, nonatomic) IBOutlet EVRow *cRow;
+@property (weak, nonatomic) IBOutlet EVRow *dRow;
+@property (weak, nonatomic) IBOutlet EVRow *sRow;
 
 @end

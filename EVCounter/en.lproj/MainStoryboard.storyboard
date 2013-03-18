@@ -1164,6 +1164,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onResetButtonPushed:" destination="2" eventType="touchUpInside" id="2tL-DF-j4G"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total:255/510" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-JT-Jpf">
                                 <constraints>
@@ -1223,6 +1226,14 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="aRow" destination="0Ob-XK-yMb" id="NQE-ol-akY"/>
+                        <outlet property="bRow" destination="W6f-fV-mS2" id="39k-mQ-JUs"/>
+                        <outlet property="cRow" destination="7wd-rX-Q85" id="pfa-gj-4J4"/>
+                        <outlet property="dRow" destination="DJ7-5g-cKb" id="3ac-Gv-1Bi"/>
+                        <outlet property="hRow" destination="bJb-9d-hIb" id="g46-AM-raN"/>
+                        <outlet property="sRow" destination="vqG-oS-d9A" id="paK-GE-mVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -1237,6 +1248,15 @@
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onResetButtonPushed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="aRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="bRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="cRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="dRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="hRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="sRow" candidateClass="EVRow"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
