@@ -8,20 +8,21 @@
 
 #import "EVRow.h"
 
-@implementation EVRow
-@synthesize evLabel;
-@synthesize evTextField;
-@synthesize evStepper;
-@synthesize plus1Button;
-@synthesize plus2Button;
-@synthesize plus3Button;
-@synthesize plus4Button;
-@synthesize plus5Button;
-@synthesize plus6Button;
-@synthesize plus100Button;
-@synthesize plusSlider;
-@synthesize plusSliderLabel;
-@synthesize plusSliderButton;
+@implementation EVRow {
+    UILabel *evLabel;
+    UITextField *evTextField;
+    UIStepper *evStepper;
+    UIButton *plus1Button;
+    UIButton *plus2Button;
+    UIButton *plus3Button;
+    UIButton *plus4Button;
+    UIButton *plus5Button;
+    UIButton *plus6Button;
+    UIButton *plus100Button;
+    UISlider *plusSlider;
+    UILabel *plusSliderLabel;
+    UIButton *plusSliderButton;
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
