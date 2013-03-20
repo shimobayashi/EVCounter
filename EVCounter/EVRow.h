@@ -12,5 +12,6 @@
 
 - (int)ev;
 - (void)setEv: (int)value;
+- (void)plusSliderValue;
 
 @end

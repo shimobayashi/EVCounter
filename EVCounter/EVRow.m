@@ -90,6 +90,11 @@
     [evStepper setValue:value];
 }
 
+- (void)plusSliderValue
+{
+    [self setEv:([self ev] + [plusSlider value])];
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
@@ -128,7 +133,7 @@
     } else if (sender == plus100Button) {
         amount = 100;
     } else if (sender == plusSliderButton) {
-        amount = [plusSlider value];
+        [self plusSliderValue];
     }
     
     [self setEv:([self ev] + amount)];

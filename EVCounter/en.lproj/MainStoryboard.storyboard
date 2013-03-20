@@ -1188,6 +1188,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onPlusAllButtonPushed:" destination="2" eventType="touchUpInside" id="zR3-Vt-yid"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1249,6 +1252,7 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onPlusAllButtonPushed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="onResetButtonPushed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="aRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="bRow" candidateClass="EVRow"/>

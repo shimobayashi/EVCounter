@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController () {
-    EVRow* rows[6];
+    NSArray* rows;
 }
 
 @end
@@ -20,12 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    rows[0] = self.hRow;
-    rows[1] = self.aRow;
-    rows[2] = self.bRow;
-    rows[3] = self.cRow;
-    rows[4] = self.dRow;
-    rows[5] = self.sRow;
+    rows = [NSArray arrayWithObjects:self.hRow, self.aRow, self.bRow, self.cRow, self.dRow, self.sRow, nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,7 +30,14 @@
 }
 
 - (IBAction)onResetButtonPushed:(UIButton*)sender {
-    NSLog(@"%@", sender);
+    for (EVRow* row in rows) {
+        [row setEv:0];
+    }
+}
+- (IBAction)onPlusAllButtonPushed:(UIButton *)sender {
+    for (EVRow* row in rows) {
+        [row plusSliderValue];
+    }
 }
 
 @end
