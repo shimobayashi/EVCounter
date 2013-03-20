@@ -21,6 +21,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     rows = [NSArray arrayWithObjects:self.hRow, self.aRow, self.bRow, self.cRow, self.dRow, self.sRow, nil];
+    for (EVRow* row in rows) {
+        row.delegate = self;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,10 +37,19 @@
         [row setEv:0];
     }
 }
+
 - (IBAction)onPlusAllButtonPushed:(UIButton *)sender {
     for (EVRow* row in rows) {
         [row plusSliderValue];
     }
+}
+
+- (void)onEVChanged {
+    int sum = 0;
+    for (EVRow* row in rows) {
+        sum += [row ev];
+    }
+    [self.totalEVLabel setText:[NSString stringWithFormat:@"Total:%d/510", sum]];
 }
 
 @end

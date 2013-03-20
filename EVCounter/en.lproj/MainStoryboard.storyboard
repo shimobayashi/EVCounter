@@ -129,12 +129,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="WKa-kn-sFD">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="WKa-kn-sFD">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="4dL-lc-j84"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qF-gn-fnm">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qF-gn-fnm">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="7xC-vI-3xv"/>
                                         </constraints>
@@ -319,12 +319,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="PyT-RD-cJf">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="PyT-RD-cJf">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="Tl3-UX-CZN"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KE-1M-CtO">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KE-1M-CtO">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="efu-i2-WUP"/>
                                         </constraints>
@@ -509,12 +509,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-x8-V2D">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-x8-V2D">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="C3I-Fi-hHi"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBk-ie-2ff">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBk-ie-2ff">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="wiJ-gL-x4S"/>
                                         </constraints>
@@ -699,12 +699,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-TP-LzA">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-TP-LzA">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="FSN-Qy-AXA"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-6U-4t6">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-6U-4t6">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="Bnc-yx-6ab"/>
                                         </constraints>
@@ -889,12 +889,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="prw-sW-XZ0">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="prw-sW-XZ0">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="m5D-gf-R2Q"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj0-K2-FXa">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj0-K2-FXa">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="XeL-Ry-dZC"/>
                                         </constraints>
@@ -1079,12 +1079,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-S3-oew">
+                                    <slider opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-S3-oew">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="115" id="cQX-te-ds4"/>
                                         </constraints>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb4-gR-Ag7">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="+ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb4-gR-Ag7">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="u4u-UK-FfB"/>
                                         </constraints>
@@ -1236,6 +1236,7 @@
                         <outlet property="dRow" destination="DJ7-5g-cKb" id="3ac-Gv-1Bi"/>
                         <outlet property="hRow" destination="bJb-9d-hIb" id="g46-AM-raN"/>
                         <outlet property="sRow" destination="vqG-oS-d9A" id="paK-GE-mVc"/>
+                        <outlet property="totalEVLabel" destination="JaI-JT-Jpf" id="HZ0-hI-nmS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -1252,14 +1253,13 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onPlusAllButtonPushed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="onResetButtonPushed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="aRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="bRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="cRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="dRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="hRow" candidateClass="EVRow"/>
                 <relationship kind="outlet" name="sRow" candidateClass="EVRow"/>
+                <relationship kind="outlet" name="totalEVLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

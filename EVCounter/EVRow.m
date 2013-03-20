@@ -88,6 +88,7 @@
     
     [evTextField setText:[NSString stringWithFormat:@"%d", value]];
     [evStepper setValue:value];
+    [self.delegate onEVChanged];
 }
 
 - (void)plusSliderValue

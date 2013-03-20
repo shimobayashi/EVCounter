@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "EVRow.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EVRowDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *totalEVLabel;
 
 @property (weak, nonatomic) IBOutlet EVRow *hRow;
 @property (weak, nonatomic) IBOutlet EVRow *aRow;
@@ -17,5 +19,7 @@
 @property (weak, nonatomic) IBOutlet EVRow *cRow;
 @property (weak, nonatomic) IBOutlet EVRow *dRow;
 @property (weak, nonatomic) IBOutlet EVRow *sRow;
+
+- (void) onEVChanged;
 
 @end

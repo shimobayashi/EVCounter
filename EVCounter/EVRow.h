@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol EVRowDelegate;
+
 @interface EVRow : UIView<UITextFieldDelegate>
+
+@property (nonatomic, assign) id<EVRowDelegate> delegate;
 
 - (int)ev;
 - (void)setEv: (int)value;
 - (void)plusSliderValue;
 
+@end
+
+@protocol EVRowDelegate
+- (void) onEVChanged;
 @end
