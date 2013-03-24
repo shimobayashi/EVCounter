@@ -50,6 +50,7 @@
         sum += [row ev];
     }
     [self.totalEVLabel setText:[NSString stringWithFormat:@"Total:%d/510", sum]];
+    //XXX ラベルの色をkaeる
 }
 
 @end
