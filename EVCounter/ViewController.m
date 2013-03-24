@@ -50,7 +50,14 @@
         sum += [row ev];
     }
     [self.totalEVLabel setText:[NSString stringWithFormat:@"Total:%d/510", sum]];
-    //XXX ラベルの色をkaeる
+    
+    if (sum == 0)
+        self.totalEVLabel.textColor = [UIColor blackColor];
+    else if (sum  == 510)
+        self.totalEVLabel.textColor = [UIColor greenColor];
+    else
+        self.totalEVLabel.textColor = [UIColor redColor];
+
 }
 
 @end
