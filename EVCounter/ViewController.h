@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet EVRow *cRow;
 @property (weak, nonatomic) IBOutlet EVRow *dRow;
 @property (weak, nonatomic) IBOutlet EVRow *sRow;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (weak, nonatomic) IBOutlet UIButton *plusAllButton;
 
 - (void) onEVChanged;
 

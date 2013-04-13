@@ -11,7 +11,7 @@
 @implementation EVRow {
     UILabel *evLabel;
     UITextField *evTextField;
-    UIStepper *evStepper;
+    UIButton *minus1Button;
     UIButton *plus1Button;
     UIButton *plus2Button;
     UIButton *plus3Button;
@@ -20,7 +20,6 @@
     UIButton *plus6Button;
     UIButton *plus100Button;
     UISlider *plusSlider;
-    UILabel *plusSliderLabel;
     UIButton *plusSliderButton;
 }
 
@@ -30,7 +29,7 @@
         // Get instances
         evLabel = (UILabel*)[self viewWithTag:13];
         evTextField = (UITextField*)[self viewWithTag:1];
-        evStepper = (UIStepper*)[self viewWithTag:2];
+        minus1Button = (UIButton*)[self viewWithTag:14];
         plus1Button = (UIButton*)[self viewWithTag:3];
         plus2Button = (UIButton*)[self viewWithTag:4];
         plus3Button = (UIButton*)[self viewWithTag:5];
@@ -39,7 +38,6 @@
         plus6Button = (UIButton*)[self viewWithTag:8];
         plus100Button = (UIButton*)[self viewWithTag:9];
         plusSlider = (UISlider*)[self viewWithTag:10];
-        plusSliderLabel = (UILabel*)[self viewWithTag:11];
         plusSliderButton = (UIButton*)[self viewWithTag:12];
         
         // Enable done button
@@ -48,23 +46,32 @@
         
         // Sync EV
         [evTextField addTarget:self action:@selector(onTextFieldChanged:) forControlEvents:UIControlEventEditingChanged];
-        [evStepper addTarget:self action:@selector(onStepperChanged:) forControlEvents:UIControlEventValueChanged];
         
         // Sync plus amount
         [plusSlider addTarget:self action:@selector(onSliderChanged:) forControlEvents:UIControlEventValueChanged];
         
         // Setup plus buttons
-        [plus1Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus2Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus3Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus4Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus5Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus6Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
-        [plus100Button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
+        NSArray *fixedPlusButtons;
+        fixedPlusButtons = [NSArray arrayWithObjects:minus1Button, plus1Button, plus2Button, plus3Button, plus4Button, plus5Button, plus6Button, plus100Button, nil];
+        for (UIButton* button in fixedPlusButtons) {
+            [button addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
+        }
         [plusSliderButton addTarget:self action:@selector(onPlusButtonPushed:) forControlEvents:UIControlEventTouchUpInside];
         
         // Lets fucnking go
         [self setEv:0];
+        
+        // Fucking looks good
+        UIImage *greenButton = [[UIImage imageNamed:@"greenButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+        UIImage *greenButtonHighlighted = [[UIImage imageNamed:@"greenButtonHighlight.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+        [plusSliderButton setBackgroundImage:greenButton forState:UIControlStateNormal];
+        [plusSliderButton setBackgroundImage:greenButtonHighlighted forState:UIControlStateHighlighted];
+        UIImage *tanButton = [[UIImage imageNamed:@"tanButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+        UIImage *tanButtonHighlighted = [[UIImage imageNamed:@"tanButtonHighlight.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+        for (UIButton* button in fixedPlusButtons) {
+            [button setBackgroundImage:tanButton forState:UIControlStateNormal];
+            [button setBackgroundImage:tanButtonHighlighted forState:UIControlStateHighlighted];
+        }
     }
     return self;
 }
@@ -87,7 +94,6 @@
         evLabel.textColor = [UIColor blackColor];
     
     [evTextField setText:[NSString stringWithFormat:@"%d", value]];
-    [evStepper setValue:value];
     [self.delegate onEVChanged];
 }
 
@@ -106,14 +112,11 @@
     [self setEv:[sender.text intValue]];
 }
 
-- (void)onStepperChanged: (UIStepper*)sender
-{
-    [self setEv:sender.value];
-}
-
 - (void)onSliderChanged: (UISlider*)sender
 {
-    [plusSliderLabel setText:[NSString stringWithFormat:@"+%2s", [[NSString stringWithFormat:@"%d", (int)[sender value]] UTF8String]]];
+    NSString *title = [NSString stringWithFormat:@"+%d", (int)[sender value]];
+    [plusSliderButton setTitle:title forState:UIControlStateNormal];
+    [plusSliderButton setTitle:title forState:UIControlStateSelected];
 }
 
 - (void)onPlusButtonPushed: (id)sender
@@ -133,6 +136,8 @@
         amount = 6;
     } else if (sender == plus100Button) {
         amount = 100;
+    } else if (sender == minus1Button) {
+        amount = -1;
     } else if (sender == plusSliderButton) {
         [self plusSliderValue];
     }
