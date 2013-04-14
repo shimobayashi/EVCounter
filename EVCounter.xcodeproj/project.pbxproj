@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CB9E6C17195B6C00A0CBFF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43CB9E6B17195B6C00A0CBFF /* background.jpg */; };
 		43D0C14216EB3AFD0055750E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0C14116EB3AFD0055750E /* UIKit.framework */; };
 		43D0C14416EB3AFD0055750E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0C14316EB3AFD0055750E /* Foundation.framework */; };
 		43D0C14616EB3AFD0055750E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0C14516EB3AFD0055750E /* CoreGraphics.framework */; };
@@ -23,6 +24,18 @@
 		43D0C16816EB3AFF0055750E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0C14316EB3AFD0055750E /* Foundation.framework */; };
 		43D0C17316EB3AFF0055750E /* EVCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D0C17216EB3AFF0055750E /* EVCounterTests.m */; };
 		43D0C17E16EB51C40055750E /* EVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D0C17D16EB51C40055750E /* EVRow.m */; };
+		43D15E03171968D300BBDBDD /* orangeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E01171968D300BBDBDD /* orangeButton.png */; };
+		43D15E04171968D300BBDBDD /* orangeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E02171968D300BBDBDD /* orangeButton@2x.png */; };
+		43D15E09171969C000BBDBDD /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E05171969C000BBDBDD /* greenButton.png */; };
+		43D15E0A171969C000BBDBDD /* greenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E06171969C000BBDBDD /* greenButton@2x.png */; };
+		43D15E0B171969C000BBDBDD /* greenButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E07171969C000BBDBDD /* greenButtonHighlight.png */; };
+		43D15E0C171969C000BBDBDD /* greenButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E08171969C000BBDBDD /* greenButtonHighlight@2x.png */; };
+		43D15E0F171969CF00BBDBDD /* orangeButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E0D171969CF00BBDBDD /* orangeButtonHighlight.png */; };
+		43D15E10171969CF00BBDBDD /* orangeButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E0E171969CF00BBDBDD /* orangeButtonHighlight@2x.png */; };
+		43D15E1517196C0100BBDBDD /* tanButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E1117196C0100BBDBDD /* tanButton.png */; };
+		43D15E1617196C0100BBDBDD /* tanButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E1217196C0100BBDBDD /* tanButton@2x.png */; };
+		43D15E1717196C0100BBDBDD /* tanButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E1317196C0100BBDBDD /* tanButtonHighlight.png */; };
+		43D15E1817196C0100BBDBDD /* tanButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D15E1417196C0100BBDBDD /* tanButtonHighlight@2x.png */; };
 		43F9783916FEF690000D4FCC /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F9783816FEF68F000D4FCC /* icon144.png */; };
 		43F9783B16FEF694000D4FCC /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F9783A16FEF694000D4FCC /* icon72.png */; };
 /* End PBXBuildFile section */
@@ -38,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43CB9E6B17195B6C00A0CBFF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		43D0C13E16EB3AFD0055750E /* EVCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D0C14116EB3AFD0055750E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43D0C14316EB3AFD0055750E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,9 +74,20 @@
 		43D0C17216EB3AFF0055750E /* EVCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVCounterTests.m; sourceTree = "<group>"; };
 		43D0C17C16EB51C40055750E /* EVRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRow.h; sourceTree = "<group>"; };
 		43D0C17D16EB51C40055750E /* EVRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRow.m; sourceTree = "<group>"; };
+		43D15E01171968D300BBDBDD /* orangeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeButton.png; sourceTree = "<group>"; };
+		43D15E02171968D300BBDBDD /* orangeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangeButton@2x.png"; sourceTree = "<group>"; };
+		43D15E05171969C000BBDBDD /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		43D15E06171969C000BBDBDD /* greenButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenButton@2x.png"; sourceTree = "<group>"; };
+		43D15E07171969C000BBDBDD /* greenButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButtonHighlight.png; sourceTree = "<group>"; };
+		43D15E08171969C000BBDBDD /* greenButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		43D15E0D171969CF00BBDBDD /* orangeButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeButtonHighlight.png; sourceTree = "<group>"; };
+		43D15E0E171969CF00BBDBDD /* orangeButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangeButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		43D15E1117196C0100BBDBDD /* tanButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanButton.png; sourceTree = "<group>"; };
+		43D15E1217196C0100BBDBDD /* tanButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tanButton@2x.png"; sourceTree = "<group>"; };
+		43D15E1317196C0100BBDBDD /* tanButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanButtonHighlight.png; sourceTree = "<group>"; };
+		43D15E1417196C0100BBDBDD /* tanButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tanButtonHighlight@2x.png"; sourceTree = "<group>"; };
 		43F9783816FEF68F000D4FCC /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon144.png; path = ../icon144.png; sourceTree = "<group>"; };
 		43F9783A16FEF694000D4FCC /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon72.png; path = ../icon72.png; sourceTree = "<group>"; };
-		43F9784216FEFA9E000D4FCC /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		43F9784316FEFA9E000D4FCC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43F9784616FEFC11000D4FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +164,19 @@
 		43D0C14816EB3AFD0055750E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43D15E1117196C0100BBDBDD /* tanButton.png */,
+				43D15E1217196C0100BBDBDD /* tanButton@2x.png */,
+				43D15E1317196C0100BBDBDD /* tanButtonHighlight.png */,
+				43D15E1417196C0100BBDBDD /* tanButtonHighlight@2x.png */,
+				43D15E0D171969CF00BBDBDD /* orangeButtonHighlight.png */,
+				43D15E0E171969CF00BBDBDD /* orangeButtonHighlight@2x.png */,
+				43D15E05171969C000BBDBDD /* greenButton.png */,
+				43D15E06171969C000BBDBDD /* greenButton@2x.png */,
+				43D15E07171969C000BBDBDD /* greenButtonHighlight.png */,
+				43D15E08171969C000BBDBDD /* greenButtonHighlight@2x.png */,
+				43D15E01171968D300BBDBDD /* orangeButton.png */,
+				43D15E02171968D300BBDBDD /* orangeButton@2x.png */,
+				43CB9E6B17195B6C00A0CBFF /* background.jpg */,
 				43F9783A16FEF694000D4FCC /* icon72.png */,
 				43F9783816FEF68F000D4FCC /* icon144.png */,
 				43D0C14916EB3AFD0055750E /* EVCounter-Info.plist */,
@@ -250,6 +288,19 @@
 				43D0C15B16EB3AFD0055750E /* MainStoryboard.storyboard in Resources */,
 				43F9783916FEF690000D4FCC /* icon144.png in Resources */,
 				43F9783B16FEF694000D4FCC /* icon72.png in Resources */,
+				43CB9E6C17195B6C00A0CBFF /* background.jpg in Resources */,
+				43D15E03171968D300BBDBDD /* orangeButton.png in Resources */,
+				43D15E04171968D300BBDBDD /* orangeButton@2x.png in Resources */,
+				43D15E09171969C000BBDBDD /* greenButton.png in Resources */,
+				43D15E0A171969C000BBDBDD /* greenButton@2x.png in Resources */,
+				43D15E0B171969C000BBDBDD /* greenButtonHighlight.png in Resources */,
+				43D15E0C171969C000BBDBDD /* greenButtonHighlight@2x.png in Resources */,
+				43D15E0F171969CF00BBDBDD /* orangeButtonHighlight.png in Resources */,
+				43D15E10171969CF00BBDBDD /* orangeButtonHighlight@2x.png in Resources */,
+				43D15E1517196C0100BBDBDD /* tanButton.png in Resources */,
+				43D15E1617196C0100BBDBDD /* tanButton@2x.png in Resources */,
+				43D15E1717196C0100BBDBDD /* tanButtonHighlight.png in Resources */,
+				43D15E1817196C0100BBDBDD /* tanButtonHighlight@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +372,6 @@
 		43D0C15916EB3AFD0055750E /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				43F9784216FEFA9E000D4FCC /* ja */,
 				43F9784616FEFC11000D4FCC /* Base */,
 			);
 			name = MainStoryboard.storyboard;
